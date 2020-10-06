@@ -21,16 +21,17 @@ header {
   position: relative;
 }
 
+.social i{
+  display: inline-block;
+  margin: 20px;
+}
+
 .social {
   position: absolute;
   top: 22px;
   right: 22px;
 }
 
-.social i{
-  display: inline-block;
-  margin: 20px;
-}
 
 header .heading {
   font-size: 32px;
@@ -82,6 +83,7 @@ main {
 }
 
 .blog {
+  margin: 0 auto;
   width: 540px;
   margin-right: 30px;
 }
@@ -226,4 +228,71 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+/* 425px以下にレスポンシブ対応させる */
+@media screen and (max-width: 425px) {
+.header {
+  width: 100px;
+}
+
+.social {
+  display: none;
+}
+
+.nav-list {
+  width: 100%;
+}
+
+.nav-list-text{
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.main-visual-content {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  display: block;
+}
+
+.blog {
+  width: 100%;
+  margin: 0;
+}
+
+.blog-box {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.blog-image {
+  width: 49%;
+}
+
+.blog-text {
+  width: 49%;
+  padding-top: 5px;
+}
+
+.pagination {
+  margin-bottom: 50px;
+}
+
+.sidebar {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.instagram-box {
+  width: 48%;
+}
+
+.instagram-box:nth-child(odd) {
+  margin-right: 4%;
+}
+
 }
